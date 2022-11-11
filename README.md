@@ -1,4 +1,7 @@
 
+
+
+
 ## Questão 01
 
 Algoritmo para encontrar o maior palíndromo (trecho que lido da esquerda pra direita e vice-versa mantem a mesma sequência em ambos os lados).
@@ -45,10 +48,10 @@ por exemplo:
 ```
 
 ```
-output_esperado:</br>
-0x55001A\n </br>
-0xAA001A\n </br>
-0XFF001A\n </br>
+output_esperado:
+    0x55001A\n
+    0xAA001A\n 
+    0XFF001A\n
 ```
 
 ## Questão 04
@@ -70,7 +73,8 @@ Output:
 
 O código deverá fazer um sorteio e a comparação com o “premio”. Se houver match , deverá ser exibida a saída da string “ganhou”.
 
-
+</br>
+</br>
 <p align=left> <b>Minhas informações de contato 📬</b></p>
 <p align=left>
 <a href="https://github.com/andersonhsporto" target="_blank"><img src="https://img.shields.io/badge/Github-181717?logo=Github&logoColor=white"/></a>  
