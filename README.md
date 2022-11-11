@@ -1,3 +1,32 @@
+## Executar
+
+Para executar os exercícios no linux, basta executar o comando abaixo:
+
+```bash
+$ make
+```
+
+este comando irá compilar todos os exercícios com o gcc. Para executar um exercício específico, 
+basta executar o comando:
+
+*substituindo o X pelo número do exercício*
+
+```bash
+$ ./exercicioX
+```
+
+Para apagar os objetos gerados, basta executar o comando abaixo:
+
+```bash
+$ make clean
+```
+
+Para apagar os objetos e o executável, basta executar o comando:
+
+```bash
+$ make fclean
+```
+
 ## Questão 01
 
 Algoritmo para encontrar o maior palíndromo (trecho que lido da esquerda pra direita e vice-versa mantem a mesma sequência em ambos os lados).
@@ -40,14 +69,14 @@ Este programa também recebe cores como argumentos em linha de comando
 por exemplo:
 
 ```bash
-./a.out 0x00001A 0xFF001A 3
+./exercicio1 0x00001A 0xFF001A 3
 ```
 
 ```
 output_esperado:
-    0x55001A\n
-    0xAA001A\n 
-    0XFF001A\n
+    0x55001A
+    0xAA001A
+    0XFF001A
 ```
 
 ## Questão 04
