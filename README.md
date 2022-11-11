@@ -41,8 +41,7 @@ Este programa também recebe cores como argumentos em linha de comando
 por exemplo:
 
 ```bash
-	./a.out 0x00001A 0xFF001A 3
-
+./a.out 0x00001A 0xFF001A 3
 ```
 
 ```
