@@ -1,7 +1,3 @@
-
-
-
-
 ## Questão 01
 
 Algoritmo para encontrar o maior palíndromo (trecho que lido da esquerda pra direita e vice-versa mantem a mesma sequência em ambos os lados).
