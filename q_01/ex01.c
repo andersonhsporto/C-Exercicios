@@ -24,7 +24,8 @@ int maxPalindrome(char *str) {
   int max = 0;
 
   if (fd == -1) {
-    return -1;
+    printf("Error opening file");
+    exit(1);
   }
   while (true) {
     char *line = getNextLine(fd);
