@@ -15,9 +15,9 @@ int main(int argc, char *argv[]) {
   if (argc == 1) {
     defaultCase();
   } else if (argc == 4) {
-    uint32_t initialColor = stringToHex(argv[2]);
-    uint32_t finalColor = stringToHex(argv[3]);
-    int steps = atoi(argv[4]);
+    uint32_t initialColor = stringToHex(argv[1]);
+    uint32_t finalColor = stringToHex(argv[2]);
+    int steps = atoi(argv[3]);
 
     gradualIncrease(initialColor, finalColor, steps);
   }
