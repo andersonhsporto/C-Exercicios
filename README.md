@@ -21,7 +21,7 @@ Para apagar os objetos gerados, basta executar o comando abaixo:
 $ make clean
 ```
 
-Para apagar os objetos e o executável, basta executar o comando:
+Para apagar os objetos e o executáveis, basta executar o comando:
 
 ```bash
 $ make fclean
@@ -69,7 +69,7 @@ Este programa também recebe cores como argumentos em linha de comando
 por exemplo:
 
 ```bash
-./exercicio1 0x00001A 0xFF001A 3
+./exercicio3 0x00001A 0xFF001A 3
 ```
 
 ```
