@@ -32,7 +32,7 @@ void slotGame(int prize[LINES][COLLUMS]) {
     fillRandomSlot(slot);
     printMatrix(slot);
     if (checkSlot(slot, prize)) {
-      printf(GREEN"--------- Ganhou! ---------\n"RESET);
+      printf(GREEN"---------    Ganhou!     ---------\n"RESET);
       break;
     }
     printf(CYAN"Tenha mais sorte na proxima vez!\n"RESET);
@@ -54,7 +54,7 @@ void fillRandomSlot(int **slot) {
 
 void printMatrix(int **matrix) {
   for (int i = 0; i < LINES; i++) {
-    printf("\t");
+    printf("\t    ");
     for (int j = 0; j < COLLUMS; j++) {
       printf("%d ", matrix[i][j]);
     }
@@ -70,7 +70,6 @@ int **createSlot() {
   while (line < LINES) {
     slot[line++] = malloc(sizeof(int));
   }
-  fillRandomSlot(slot);
   return (slot);
 }
 
@@ -91,3 +90,4 @@ void freeSlot(int **slot) {
   }
   free(slot);
 }
+

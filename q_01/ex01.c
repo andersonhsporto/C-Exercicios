@@ -48,25 +48,23 @@ char *getNextLine(int fd) {
   return c > s ? (*c = 0, s) : (free(s), NULL);
 }
 
-char *reverseString(char *string) {
-  char *result = malloc(strlen(string) + 1);
-
-  for (int i = 0; i < strlen(string); i++) {
-    result[i] = string[strlen(string) - i - 1];
-  }
-  result[strlen(string)] = '\0';
-  return result;
-}
-
 bool isPalindrome(char *str) {
-  char *reversed = reverseString(str);
+	int len = strlen(str);
+	if (len == 0) {
+		return true;
+	}
 
-  if (strcmp(str, reversed) == 0) {
-    free(reversed);
-    return true;
-  }
-  free(reversed);
-  return false;
+	int i = 0;
+	int j = len - 1;
+
+	while (i < j)
+	{
+		if (str[i] != str[j])
+			return false;
+		i++;
+		j--;
+	}
+	return true;
 }
 
 int maxPossiblePalindrome(char *str) {
