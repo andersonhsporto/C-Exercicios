@@ -37,12 +37,12 @@ char *reader() {
 bool isRoman(char *str) {
   char *roman = "IVXLCDM";
 
-  for (int i = 0; i < strlen(str); i++) {
-    if (strchr(roman, str[i])) {
-      return true;
+  for (int i = 0; i < strlen(str) - 1; i++) {
+    if (!strchr(roman, str[i])) {
+      return false;
     }
   }
-  return false;
+  return true;
 }
 
 int romanToInt(char c) {
